@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopi Kampus</title>
+    <title>Jadwal Operasional</title>
 
     <style>
         * {
@@ -129,87 +129,65 @@
         hr {
             border: 0;
             border-top: 1px solid #999;
+            margin-bottom: 45px;
         }
 
         h1 {
-            text-align: center;
-            font-size: 43px;
+            font-size: 38px;
             font-weight: normal;
-            line-height: 1.45;
-            margin: 0;
-            padding: 30px 0 35px;
+            margin-bottom: 70px;
         }
 
-        .slogan {
-            text-align: center;
-            font-size: 25px;
+        table {
+            border-collapse: collapse;
+            width: 310px;
+            max-width: 100%;
+            background: rgba(255,255,255,.65);
+        }
+
+        th,
+        td {
+            border: 1.5px solid #333;
+            padding: 18px 15px;
+            text-align: left;
+            font-size: 22px;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        .catatan {
             font-style: italic;
-            line-height: 1.7;
-            margin: 5px 20px 35px;
-        }
-
-        .content-line {
-            border-top: 1px solid #999;
-            margin-bottom: 30px;
-        }
-
-        .description {
-            font-size: 25px;
-            line-height: 1.7;
-        }
-
-        .highlight {
-            background-color: yellow;
-        }
-
-        h2 {
-            font-size: 36px;
-            margin-top: 35px;
-            margin-bottom: 35px;
-        }
-
-        .favorite {
-            font-size: 24px;
-            line-height: 1.9;
-            padding-left: 50px;
-        }
-
-        .favorite ul {
-            list-style-type: circle;
-            padding-left: 35px;
+            font-size: 20px;
+            line-height: 1.8;
         }
 
         footer {
             text-align: center;
             color: #777;
-            font-size: 19px;
-            margin-top: 75px;
+            font-size: 18px;
+            margin-top: 65px;
             padding-bottom: 20px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 500px) {
             .container {
                 width: 90%;
             }
 
+            .menu {
+                font-size: 17px;
+            }
+
             h1 {
-                font-size: 39px;
+                font-size: 30px;
             }
 
-            .slogan {
-                font-size: 22px;
-            }
-
-            .description {
-                font-size: 23px;
-            }
-
-            h2 {
-                font-size: 34px;
-            }
-
-            .favorite {
-                font-size: 22px;
+            th,
+            td {
+                font-size: 19px;
+                padding: 15px 12px;
             }
         }
     </style>
@@ -238,50 +216,48 @@
     <hr>
 
     <h1>
-        Selamat Datang di Kopi<br>
-        Kampus.
+        Jam Operasional Kedai
     </h1>
 
-    <div class="slogan">
-        "Tempat terbaik untuk tugas, diskusi, dan<br>
-        menjemput inspirasi."
-    </div>
+    <table>
 
-    <div class="content-line"></div>
+        <tr>
+            <th>Hari</th>
+            <th>Jam Buka</th>
+        </tr>
 
-    <div class="description">
-        Cafe Kopi didirikan sejak tahun 2026 untuk
-        mendukung produktivitas Programer dalam
-        menyelesaikan tugas coding. Kami
-        berkomitmen menyajikan racikan kopi
-        berkualitas tinggi namun tetap dengan
+        <tr>
+            <td>
+                Senin -<br>
+                Jumat
+            </td>
 
-        <span class="highlight">
-            harga yang sangat terjangkau
-        </span>
+            <td>
+                09.00 -<br>
+                22.00
+            </td>
+        </tr>
 
-        bagi kantong programer profesional.
-    </div>
+        <tr>
+            <td>
+                Sabtu -<br>
+                Minggu
+            </td>
 
-    <h2>Menu Favorit Kami</h2>
+            <td>
+                10.00 -<br>
+                24.00
+            </td>
+        </tr>
 
-    <ul class="favorite">
-        <li>
-            Minuman
-            <ul>
-                <li>Kopi Susu Aren</li>
-                <li>Green Tea Latte</li>
-            </ul>
-        </li>
+        <tr>
+            <td colspan="2" class="catatan">
+                Format waktu dalam<br>
+                WIB
+            </td>
+        </tr>
 
-        <li>
-            Makanan
-            <ul>
-                <li>Roti Bakar Cokelat</li>
-                <li>Kentang Goreng</li>
-            </ul>
-        </li>
-    </ul>
+    </table>
 
     <footer>
         Created by Rahmat Aprianto @2026
